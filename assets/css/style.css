@@ -6,3 +6,15 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
+
+/* Estilo para footer fijo en bottom */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
