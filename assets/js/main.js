@@ -4,10 +4,10 @@ var token = "8ac5835e9a61008fbe7a74c0983fa98927c729702025a54520b53429f70f7afd", 
 	num_trab = 12; //cantidad de trabajos
 
 $.ajax({
-	url: 'https://api.dribbble.com/v1/'+ userid +'/simplebits',
-	type: 'GET, ',
+	url: 'https://api.dribbble.com/v1/jennyyu/simplebits',
+	type: 'GET /users/:user,jennyyu ',
 	dataType: 'jsonp',
-	data: {access_token:token, count:num_photos},
+	data: {access_token:token, count:num_trab},
 })
 .done(function() {
 	console.log("success");
