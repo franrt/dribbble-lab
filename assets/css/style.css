@@ -10,3 +10,13 @@
 #nav-menu{
 	padding-left: 130px;/*separa nav de logo*/
 }
+
+#nav-downside{
+	background-color: white;
+	color: gray;
+}
+/*parte inferior de nav tiene que centrarse
+
+#nav-downside ul{
+	padding-left: 30%;
+}*/
