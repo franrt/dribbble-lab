@@ -18,3 +18,6 @@ $.ajax({
 .always(function() {
 	console.log("complete");
 });
+
+
+$(".dropdown-button").dropdown(); //para que dropdown funke
