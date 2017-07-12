@@ -9,6 +9,27 @@
 }
 
 
+/* Estilos Natalia */
+
+
+/* CLASES PARA EL SIDEBAR*/
+
+.iconos-sidebar .fa {
+    color: grey;
+}
+
+.skills .btn {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+
+
+/*CLASES PARA EL SIDEBAR*/
+
+
 /*Estilos Vale para footer*/
 
 body {
