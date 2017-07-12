@@ -8,6 +8,13 @@
     -moz-box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 62.5%;
+    line-height: 1;
+    background: #eeeeee;
+}
+
 
 /* Estilos Natalia */
 
@@ -30,26 +37,65 @@
 /*CLASES PARA EL SIDEBAR*/
 
 
-/*Estilos Vale para footer*/
-
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-
 /* Estilo para footer fijo en bottom */
 
-main {
+
+/*main {
     flex: 1 0 auto;
+}*/
+
+
+/*ESTILOS NAVBAR*/
+
+.nav-wrapper {
+    background-color: #333333;
+}
+
+#nav-menu a {
+    color: #999999;
+}
+
+#logo-dribbble {
+    display: block;
+    top: 7px;
+    background-repeat: no-repeat;
+}
+
+#btn-shots {
+    background-color: #fbfbfb;
+    color: #999999;
+    padding: 0 5px 0 5px;
+    font-size: .8em;
+    border-radius: 10px;
+    box-shadow: none;
+    border-color: #333333;
+}
+
+#sub-nav {
+    color: #333333;
+    text-align: center;
+    background-color: #fbfbfb;
+    width: 100%;
+    /*no quiere tomar el ancho*/
+}
+
+.sub-num {
+    color: #999999;
+}
+
+.nav-content {
+    width: 100%;
+}
+
+.fa-sort {
+    font-size: 0.7em;
 }
 
 
 /* Estilos Martina */
 
 #nav-menu {
-    padding-left: 130px;
+    padding-left: 120px;
     /*separa nav de logo*/
 }
 
