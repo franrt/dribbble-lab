@@ -12,6 +12,7 @@ $(function() {
       '<a target="_blank" href="'+val.html_url+'">'+
         '<li class="box">'+
         '<img class="responsive-img" src="'+val.images.normal+'" />'+
+            '<div id="overlay">' + '<h5>' +val.tittle+ '</h5>' + '<br>' + val.decription + '</div>'+
           '<p><i class="fa fa-eye" aria-hidden="true"></i>' + val.views_count +" "+
             "<i class='fa fa-comment' aria-hidden='true'></i>"+ val.comments_count+" "+
             "<i class='fa fa-heart' aria-hidden='true'></i>"+val.likes_count+
@@ -26,4 +27,8 @@ $(function() {
     $('#dribbble').append('<li>No shots.</li>');
     }
   });
+});
+
+$(document).ready(function($) {
+    $('#overlay').hover();
 });
