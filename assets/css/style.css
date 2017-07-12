@@ -13,9 +13,6 @@ body {
 }
 
 
-/* Estilos Natalia */
-
-
 /* CLASES PARA EL SIDEBAR*/
 
 .iconos-sidebar .fa {
@@ -61,8 +58,27 @@ body {
     border: none;
 }
 
-#hire {
-    color: white;
+.btn-skill {
+    background-color: #fbfbfb;
+    margin: 2px 1px;
+    padding: 7px 12px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 0.8px solid #999999;
+    border-radius: 4px;
+    color: #333333;
+}
+
+.iconos-sidebar {
+    color: #333333;
+}
+
+.skills {
+    margin: 5px;
+}
+
+.divider {
+    margin-top: 5px;
 }
 
 
@@ -121,7 +137,7 @@ body {
 
 #nav-downside {
     background-color: white;
-    color: gray;
+    color: #999999;
 }
 
 .dribbble a li p {
@@ -136,9 +152,21 @@ body {
     background-color: #fbfbfb;
 }
 
+.page-footer a {
+    color: #999999;
+}
+
 .box {
     list-style: none;
     border: 10px solid #fbfbfb;
     background-color: #fbfbfb;
     margin-bottom: 10px;
+}
+
+#showNtell {
+    font-size: 20px;
+}
+
+#footer i {
+    padding: 5px;
 }
