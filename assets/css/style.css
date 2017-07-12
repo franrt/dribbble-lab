@@ -1,20 +1,43 @@
 /* Acá van tus estilos */
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
-#nav-menu{
-	padding-left: 130px;/*separa nav de logo*/
+
+/*Estilos Vale para footer*/
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-#nav-downside{
-	background-color: white;
-	color: gray;
+
+/* Estilo para footer fijo en bottom */
+
+main {
+    flex: 1 0 auto;
 }
+
+
+/* Estilos Martina */
+
+#nav-menu {
+    padding-left: 130px;
+    /*separa nav de logo*/
+}
+
+#nav-downside {
+    background-color: white;
+    color: gray;
+}
+
+
 /*parte inferior de nav tiene que centrarse
 
 #nav-downside ul{
