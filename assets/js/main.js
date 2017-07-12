@@ -10,17 +10,43 @@ $(document).ready(function() {
     $(function() {
         $.getJSON('https://api.dribbble.com/v1/users/jennyyu/shots?access_token=' + token + '&callback=?', function(resp) {
             if (resp.data.length > 0) {
-                console.log(resp.data);
+                console.log('data', resp.data);
                 $.each(resp.data.reverse(), function(i, val) {
+                    // Obtenemos la descripcion
+                    //console.log(val.description);
+                    // Eliminar los tag con una expresion regular
+                    //val.description.match(/<p>(.*?)<\/p>/g);
+
+                    ///<p>(.*?)<\/p>/g.exec(val.description);
+                    //console.log('ads', /<p>(.*?)<\/p>/g.exec(val.description)[1]);
+                    var a = /<p>(.*?)<\/p>/g.exec(val.description)[1];
+                    console.log('a', a);
+
                     $('#dribbble').prepend(
-                        '<li class="box"><img src="' + val.images.normal + '" /><h2>' + val.title + '</h2><p><a href="' + val.html_url + '">original post &rarr;</a></p></li>'
+                        '<div class="col s4 m4">' +
+                        '<a target="_blank" href="' + val.html_url + '">' +
+                        '<li class="box">' +
+                        '<img id="data-' + val.id + '" class="responsive-img img-tooltip" src="' + val.images.normal + '" />' +
+                        '<p><i class="fa fa-eye" aria-hidden="true"></i>' + val.views_count + " " +
+                        "<i class='fa fa-comment' aria-hidden='true'></i>" + val.comments_count + " " +
+                        "<i class='fa fa-heart' aria-hidden='true'></i>" + val.likes_count +
+                        '</p>' +
+                        '</li>' +
+                        '</a>' +
+                        '</div>'
                     );
+                    $('#data-' + val.id).tooltip({ delay: 50, html: true, tooltip: a });
                 });
+                /***************************************** Codigo Nat para el tooltip *************************************/
+
             } else {
                 $('#dribbble').append('<li>No shots.</li>');
             }
         });
     });
+
+
+
 
     /***************************************** Codigo Martina *************************************/
     $('.dropdown-button').dropdown();
