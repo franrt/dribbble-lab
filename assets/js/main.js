@@ -20,4 +20,10 @@ $(function() {
       '</a>'+
     '</div>'
     );
-
+    });
+  }
+  else {
+    $('#dribbble').append('<li>No shots.</li>');
+    }
+  });
+});
