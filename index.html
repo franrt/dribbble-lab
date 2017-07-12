@@ -1,34 +1,306 @@
 <!-- Acá va tu HTML -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Dribbble lab</title>
-	<script src="https://use.fontawesome.com/1625bb79ec.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/ball.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Dribbble lab</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/ball.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <!-- Materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-	<!-- Imagenes Anayn-María Paz -->
-	<section class="container">
-		<div class="row">
-			<div class="col s12 m12">
-				<div class="col s4 m4">
-					
-				</div>
-				<div class="col s8 m8">
-						<div class="row">
-								<div id="dribbble">
-								</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	<script src="assets/js/main.js"></script>
+
+
+
+    <!-- Codigo navbar por Martina -->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Recents</a></li>
+        <li><a href="#">Debuts</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Playoffs</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Highlights</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Goods by Designers</a></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#">Find Designers</a></li>
+        <li><a href="#">Design Teams</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Add Your Design Team</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="#">Latest Story</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Weekly Replay: Jul 3</a></li>
+        <li><a href="#">Timeout: Riddhi Desai</a></li>
+        <li><a href="#">Pep Rally: Vancouver, BC</a></li>
+    </ul>
+
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href="#">Latest Episodes</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Episode 16: Danielle Evans</a></li>
+        <li><a href="#">Episode 15: Rogie King</a></li>
+        <li><a href="#">Episode 14: Aaron Draplin</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Listen in iTunes</a></li>
+    </ul>
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href="#">Dribbble Meetups</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Host a Meetup</a></li>
+    </ul>
+
+    <ul id="dropdown6" class="dropdown-content">
+        <li><a href="#">All</a></li>
+        <li><a href="#">Remote /Anywhere</a></li>
+        <li><a href="#">Teams Hiring</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Post a Job</a></li>
+    </ul>
+
+    <ul id="dropdown7" class="dropdown-content">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Support</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Places</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Buckets</a></li>
+        <li><a href="#">Colors</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Integration</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" id="logo-dribbble">dribbble</a>
+
+            <ul class="left hide-on-med-and-down" id="nav-menu">
+                <li><a class="dropdown-button" href="#" data-activates="dropdown1">Shots</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown2">Designers</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown3">Blog</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown4">Podcast</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown5">Meetups</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown6">Jobs</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown7"><i class="material-icons">more_horiz</i></a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="center tabs full-tabs" id="nav-downside">
+                <li class="tab"><a href="#">Shots <span>31</span></a></li>
+                <li class="tab"><a href="#">Followers <span>2,102</span></a></li>
+                <li class="tab"><a href="#">More <i class="material-icons">keyboard_arrow_down</i></a></li>
+                <button>recent shots</button>
+            </ul>
+
+            <i class="material-icons">view_module</i>
+        </div>
+    </nav>
+
+    <!-- Fin codigo Martina -->
+
+
+    <!-- Inicio codigo Natalia -->
+    <!--Barra lateral-->
+    <div class="container">
+        <div class="row">
+            <div class="col l4 s12">
+                <div class="userView">
+                    <img class="circle" src="http://placehold.it/60x60">
+                    <div class="center-align">Jenny Yu</div>
+                    <div class="center-align">Los Angeles, CA</div>
+                    <div class="center-align">Illustrator, designer, animator, maker of stuff. Email: jennyyuart@gmail.com</div>
+                    <div class="center-align">
+                        <a class="waves-effect waves-light btn light-green"><i class="fa fa-envelope left" aria-hidden="true"></i>Hire Me</a>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="skills">
+                    <div class="subheader">SKILLS</div>
+                    <a class="waves-effect waves-light tag">adobe photoshop</a>
+                    <a class="waves-effect waves-light tag">adobe illustrator</a>
+                    <a class="waves-effect waves-light tag">adobe indesign</a>
+                    <a class="waves-effect waves-light tag">illustration</a>
+                    <a class="waves-effect waves-light tag">art direction</a>
+                    <a class="waves-effect waves-light tag">gifs</a>
+                    <a class="waves-effect waves-light tag">animation</a>
+                    <a class="waves-effect waves-light tag">digital painting</a>
+                    <a class="waves-effect waves-light tag">digital art</a>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="subheader">ELSEWHERE</div>
+                <div class="iconos-sidebar">
+                    <div>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <span>Twitter</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <span>Linkedln</span>
+                    </div>
+                    <div>
+                        <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+                        <span>Vimeo</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col l8 s12">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="col s4 m4">
+
+                        </div>
+                        <div class="col s8 m8">
+                            <div class="row">
+                                <div id="dribbble">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+            <!-- Imagenes Anayn-María Paz -->
+            <!--<section class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="col s4 m4">
+
+                </div>
+                <div class="col s8 m8">
+                    <div class="row">
+                        <div id="dribbble">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+
+
+        </div>
+    </div>
+    <!-- Fin codigo Natalia -->
+
+
+
+    <!-- Inicio de codigo Vale -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m4 s12">
+                    <h5>dribbble</h5>
+                    <h5 class="white-text">Show and tell for designers</h5>
+                    <p class="grey-text text-lighten-4">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.</p>
+                    <i class="fa fa-dribbble fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="col m2 s4">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Help</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col m2 s4">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Guidelines</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Shop</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col m2 s4">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Brand</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Advertise</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">API</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="col m2 s12">
+                    <h5 class="white-text">Jobs for Designers</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">
+                                <img src="assets/img-footer/volusion.svg" height="30" width="30" class="img-responsive circle" alt="Volusion"> Volusion <br>
+                                <small>Senior Mobile UI Designer</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">
+                                <img src="assets/img-footer/ravelin.png" height="30" width="30" class="img-responsive circle" alt="Ravelin"> Ravelin <br>
+                                <small>Product Designer</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                We're <b>Tiny</b> along with <b>Designer News, Crew, MetaLab, Flow, Pixel Union, We Work Remotely</b> and more. © 2017 Dribbble. All rights reserved.
+            </div>
+        </div>
+        <div class="">
+            <img src="assets/img-footer/dribbble-ball.png" class="img-responsive" height="80" width="80" alt="dribbble">
+            <h5>778,798,209,007</h5>
+            <p>pixels dribbled</p>
+        </div>
+    </footer>
+    <!-- Fin de codigo Vale -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
