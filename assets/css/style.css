@@ -31,7 +31,20 @@ body {
 }
 
 
-/*CLASES PARA EL SIDEBAR*/
+/*CLASES PARA EL SIDEBAR + PORTFOLIO*/
+
+.portfolio {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.lateral {
+    background-color: #fbfbfb;
+    width: 400px;
+    position: absolute;
+}
+
+#dribble {}
 
 
 /*ESTILOS NAVBAR*/
@@ -98,4 +111,8 @@ body {
 .page-footer {
     color: #999999;
     background-color: #fbfbfb;
+}
+
+li {
+    list-style: none;
 }
