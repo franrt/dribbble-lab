@@ -1,22 +1,120 @@
 <!-- Acá va tu HTML -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Dribbble lab</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Dribbble lab</title>
+    <!-- Materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
+    <!-- Codigo navbar por Martina -->
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Recents</a></li>
+        <li><a href="#">Debuts</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Playoffs</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Highlights</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Goods by Designers</a></li>
+    </ul>
+
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#">Find Designers</a></li>
+        <li><a href="#">Design Teams</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Add Your Design Team</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="#">Latest Story</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Weekly Replay: Jul 3</a></li>
+        <li><a href="#">Timeout: Riddhi Desai</a></li>
+        <li><a href="#">Pep Rally: Vancouver, BC</a></li>
+    </ul>
+
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href="#">Latest Episodes</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Episode 16: Danielle Evans</a></li>
+        <li><a href="#">Episode 15: Rogie King</a></li>
+        <li><a href="#">Episode 14: Aaron Draplin</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Listen in iTunes</a></li>
+    </ul>
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href="#">Dribbble Meetups</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Host a Meetup</a></li>
+    </ul>
+
+    <ul id="dropdown6" class="dropdown-content">
+        <li><a href="#">All</a></li>
+        <li><a href="#">Remote /Anywhere</a></li>
+        <li><a href="#">Teams Hiring</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Post a Job</a></li>
+    </ul>
+
+    <ul id="dropdown7" class="dropdown-content">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Support</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Places</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Buckets</a></li>
+        <li><a href="#">Colors</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Integration</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" id="logo-dribbble">dribbble</a>
+
+            <ul class="left hide-on-med-and-down" id="nav-menu">
+                <li><a class="dropdown-button" href="#" data-activates="dropdown1">Shots</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown2">Designers</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown3">Blog</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown4">Podcast</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown5">Meetups</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown6">Jobs</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="dropdown7"><i class="material-icons">more_horiz</i></a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="center tabs full-tabs" id="nav-downside">
+                <li class="tab"><a href="#">Shots <span>31</span></a></li>
+                <li class="tab"><a href="#">Followers <span>2,102</span></a></li>
+                <li class="tab"><a href="#">More <i class="material-icons">keyboard_arrow_down</i></a></li>
+                <button>recent shots</button>
+            </ul>
+
+            <i class="material-icons">view_module</i>
+        </div>
+    </nav>
 
 
-	<script
-  	src="https://code.jquery.com/jquery-3.2.1.js"
-  	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	<script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
