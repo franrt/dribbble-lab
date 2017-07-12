@@ -9,9 +9,6 @@
 }
 
 body {
-    font-family: Arial, Tahoma, sans-serif;
-    font-size: 62.5%;
-    line-height: 1;
     background: #eeeeee;
 }
 
@@ -35,14 +32,6 @@ body {
 
 
 /*CLASES PARA EL SIDEBAR*/
-
-
-/* Estilo para footer fijo en bottom */
-
-
-/*main {
-    flex: 1 0 auto;
-}*/
 
 
 /*ESTILOS NAVBAR*/
@@ -75,8 +64,7 @@ body {
     color: #333333;
     text-align: center;
     background-color: #fbfbfb;
-    width: 100%;
-    /*no quiere tomar el ancho*/
+    height: 64px;
 }
 
 .sub-num {
@@ -105,8 +93,9 @@ body {
 }
 
 
-/*parte inferior de nav tiene que centrarse
+/* ESTILOS FOOTER */
 
-#nav-downside ul{
-	padding-left: 30%;
-}*/
+.page-footer {
+    color: #999999;
+    background-color: #fbfbfb;
+}
